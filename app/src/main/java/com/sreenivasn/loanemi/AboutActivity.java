@@ -29,6 +29,7 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.Calendar;
+import java.util.Objects;
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -41,7 +42,7 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
@@ -93,28 +94,24 @@ public class AboutActivity extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                // todo: goto back activity from here
-                if (mInterstitialAd.isLoaded()) {
-                    mInterstitialAd.show();
-                } else {
-                    Log.d("TAG", "The interstitial wasn't loaded yet.");
-                    finish();
-                }
+        if (item.getItemId() == android.R.id.home) {// todo: goto back activity from here
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                Log.d("TAG", "The interstitial wasn't loaded yet.");
+                finish();
+            }
 
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
     public void onBackPressed() {
 
         if (mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         } else {
-            Log.d("TAG", "The interstitial wasn't loaded yet.");
+            Log.d("TAG", "The interstitial wasn't loaded yet");
             finish();
         }
     }
