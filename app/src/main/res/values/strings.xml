@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Loan EMI Calculator</string>
+    <string name="version_name">Version:1.0</string>
+    <string name="author_name">Sreenivas Nirsanametla</string>
+    <string name="principal_amount">Principal Amount</string>
+    <string name="rate_of_interest">Rate Of Interest</string>
+    <string name="time_period_tenure">Time Period/Tenure</string>
+    <string name="months">Months</string>
+    <string name="years">Years</string>
+    <string name="calculate_emi">Calculate Emi</string>
+    <string name="create_amortization_table">Create amortization table</string>
+    <string name="emi">Emi</string>
+    <string name="interest">* Interest</string>
+    <string name="principal">* Principal:100%</string>
+    <string name="adMob_banner_id">ca-app-pub-8390687839941362/8313419343</string>
+    <string name="adMob_inter_id">ca-app-pub-8390687839941362/2268538138</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terns_u0026_conditions"><![CDATA[Terns & Conditions]]></string>
+    <string name="author">text</string>
+    <string name="reset">reset</string>
+    <string name="_emi">EMI</string>
+    <string name="_interest">Interest</string>
+    <string name="_principal">Principal</string>
+    <string name="_balance">Balance</string>
+    <string name="s_no">S.No</string>
+</resources>

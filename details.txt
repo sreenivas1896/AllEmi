@@ -1,0 +1,11 @@
+Calculate EMI (Equated Monthly Instalments)  for Home Loans, Car / Auto Loans, Personal Loans etc. 
+with Loan EMI Calculator
+
+Features:
+- Directly share EMI details with anyone through WhatsApp,E-mail, message
+- View and share monthly payment details with Amortization Table
+- Tap on an EMI row to view interest,principal and more payment  details till that EMI
+- Simple and good user-friendly interface
+- Free app, development supported by ads
+
+We will continue to add new features gradually.
